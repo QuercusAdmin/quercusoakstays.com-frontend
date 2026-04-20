@@ -1,5 +1,5 @@
 {
-  "homepage": "https://quercusadmin.github.io/quercusaokstays.com/",
+  "homepage": "https://quercusadmin.github.io/quercusoakstays.com-frontend/",
   "name": "quercusoakstays.com",
   "version": "0.1.0",
   "private": true,
@@ -35,7 +35,7 @@
     "web-vitals": "^5.0.0-rc.1"
   },
   "scripts": {
-    "start": "react-scripts start PORT=3500",
+    "start": "react-scripts ",
     "build": "react-scripts build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",

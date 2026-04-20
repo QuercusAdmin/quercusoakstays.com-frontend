@@ -70,7 +70,7 @@ useEffect(() => {
           <Route path='/refund-policy' element={<RefundPolicy/>}/>
           <Route path='/cookies' element={<Cookies/>}/>
           <Route path='/team' element={<Team/>}/>
-          <Route path="*" element={<Navigate to="/" />} />
+          {/* <Route path="*" element={<Navigate to="/" />} /> */}
 
 
           </Routes>

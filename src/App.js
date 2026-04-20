@@ -11,7 +11,7 @@ import Cookies from './pages/Cookies.jsx'
 import Properties from './pages/Properties.jsx';
 import TermsAndCondition from './pages/TermsAndCondition.jsx'
 import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
-import {WHATSAPP_CHAT_NUMBER,WHATSAPP_CHAT_MESSAGE} from './config/config.js'
+import {WHATSAPP_CHAT_NUMBER,WHATSAPP_CHAT_MESSAGE} from './config/configuration.js'
 import { ToastContainer, toast, Slide } from "react-toastify";
 import PropertyView from './pages/PropertyView.jsx';
 

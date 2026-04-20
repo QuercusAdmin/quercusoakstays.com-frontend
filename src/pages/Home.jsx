@@ -10,7 +10,7 @@ import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import { toast } from "react-toastify";
 import axiosInstance from "../axiosInstance.js"
-import { baseUrl, SUCCESS, MARQUEE_COUNT, WHATSAPP_LIST_MESSAGE,WHATSAPP_CHAT_NUMBER ,TIME_SAVING_COUNT, REVENUE_GROWTH_COUNT, STAFF_EFFICIENCY_COUNT, GUEST_SATISFACTION_COUNT, OPERATION_VISIBILITY_COUNT, GUEST_FEEDBACK_COUNT, TRUSTEDBY_COUNT } from "../config/config.js";
+import { baseUrl, SUCCESS, MARQUEE_COUNT, WHATSAPP_LIST_MESSAGE,WHATSAPP_CHAT_NUMBER ,TIME_SAVING_COUNT, REVENUE_GROWTH_COUNT, STAFF_EFFICIENCY_COUNT, GUEST_SATISFACTION_COUNT, OPERATION_VISIBILITY_COUNT, GUEST_FEEDBACK_COUNT, TRUSTEDBY_COUNT } from "../config/configuration.js";
 import { HashLink } from "react-router-hash-link";
 import { motion, AnimatePresence } from "framer-motion"
 import { useNavigate } from 'react-router-dom';

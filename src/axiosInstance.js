@@ -1,7 +1,6 @@
 import axios from "axios";
-import { baseLink, baseUrl } from "./config/config";
+import { baseLink, baseUrl,AXIOS_APIKEY } from "./config/configuration.js";
 import { toast } from "react-toastify";
-import { AXIOS_APIKEY } from "./config/config";
 
 const axiosInstance = axios.create({
   baseURL: baseUrl, 

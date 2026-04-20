@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx'
 import { toast } from "react-toastify";
 import axiosInstance from "../axiosInstance.js"
 import { useNavigate, useLocation } from 'react-router-dom';
-import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE,  SUCCESS, COMPANY_ADDRESS} from '../config/config.js'
+import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE,  SUCCESS, COMPANY_ADDRESS} from '../config/configuration.js'
 
 
 function Contact() {

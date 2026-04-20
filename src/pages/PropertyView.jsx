@@ -30,7 +30,7 @@ import {
 } from "react-icons/fa";
 import { BsHouseDoor,BsAwardFill,BsCheckCircleFill,BsStarFill, BsDiamond } from "react-icons/bs"
 import { useLocation } from "react-router-dom";
-import { WHATSAPP_CHAT_NUMBER } from '../config/config.js'
+import { WHATSAPP_CHAT_NUMBER } from '../config/configuration.js'
 
 function PropertyView() {
 

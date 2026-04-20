@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx'
 import DOMPurify from 'dompurify';
 import { toast } from "react-toastify";
 import axiosInstance from "../axiosInstance.js"
-import { baseUrl, SUCCESS } from "../config/config.js";
+import { baseUrl, SUCCESS } from "../config/configuration.js";
 
 function TermsAndCondition() {
 

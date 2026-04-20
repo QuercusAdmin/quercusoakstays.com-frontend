@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from "react";
-import Header2 from '../components/Header2'
-import Footer from '../components/Footer'
+import Header2 from '../components/Header2.jsx'
+import Footer from '../components/Footer.jsx'
 import DOMPurify from 'dompurify';
 import { toast } from "react-toastify";
-import axiosInstance from "../axiosInstance"
-import { baseUrl, SUCCESS } from "../config/config";
+import axiosInstance from "../axiosInstance.js"
+import { baseUrl, SUCCESS } from "../config/config.js";
 
 function PrivacyPolicy() {
 

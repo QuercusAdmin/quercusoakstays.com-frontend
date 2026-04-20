@@ -1,6 +1,6 @@
 import React, { useState,useEffect,useMemo } from "react";
-import Header2 from '../components/Header2'
-import Footer from '../components/Footer'
+import Header2 from '../components/Header2.jsx'
+import Footer from '../components/Footer.jsx'
 import moment from 'moment'
 import { toast } from "react-toastify";
 import {
@@ -18,7 +18,7 @@ import {
   FaDumbbell
 } from "react-icons/fa";
 import { useNavigate, useLocation } from 'react-router-dom';
-import PriceRangeSlider from "../components/PriceRangeSlider";
+import PriceRangeSlider from "../components/PriceRangeSlider.jsx";
 
 
 function Properties() {

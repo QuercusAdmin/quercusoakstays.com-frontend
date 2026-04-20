@@ -1,19 +1,19 @@
 import React,{useEffect,useState} from 'react'
 import { Routes, Route, Navigate } from 'react-router-dom'
 import 'react-toastify/dist/ReactToastify.css';
-import Home from './pages/Home'
+import Home from './pages/Home.jsx'
 import "./App.css";
-import Team from './pages/Team'
-import Error from './pages/Error'
-import Contact from './pages/Contact'
-import RefundPolicy from './pages/RefundPolicy'
-import Cookies from './pages/Cookies'
-import Properties from './pages/Properties';
-import TermsAndCondition from './pages/TermsAndCondition'
-import PrivacyPolicy from './pages/PrivacyPolicy'
-import {WHATSAPP_CHAT_NUMBER,WHATSAPP_CHAT_MESSAGE} from './config/config'
+import Team from './pages/Team.jsx'
+import Error from './pages/Error.jsx'
+import Contact from './pages/Contact.jsx'
+import RefundPolicy from './pages/RefundPolicy.jsx'
+import Cookies from './pages/Cookies.jsx'
+import Properties from './pages/Properties.jsx';
+import TermsAndCondition from './pages/TermsAndCondition.jsx'
+import PrivacyPolicy from './pages/PrivacyPolicy.jsx'
+import {WHATSAPP_CHAT_NUMBER,WHATSAPP_CHAT_MESSAGE} from './config/config.js'
 import { ToastContainer, toast, Slide } from "react-toastify";
-import PropertyView from './pages/PropertyView';
+import PropertyView from './pages/PropertyView.jsx';
 
 export default function App() {
   const [ShowTopBtn, setShowTopBtn] = useState(false);

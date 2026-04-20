@@ -1,6 +1,6 @@
 import React, { useState,useEffect } from "react";
-import Header2 from '../components/Header2'
-import Footer from '../components/Footer'
+import Header2 from '../components/Header2.jsx'
+import Footer from '../components/Footer.jsx'
 
 function Cookies() {
 

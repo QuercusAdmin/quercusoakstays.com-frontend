@@ -1,10 +1,10 @@
 import React, { useState,useEffect } from "react";
-import Header2 from '../components/Header2'
-import Footer from '../components/Footer'
+import Header2 from '../components/Header2.jsx'
+import Footer from '../components/Footer.jsx'
 import { toast } from "react-toastify";
-import axiosInstance from "../axiosInstance"
+import axiosInstance from "../axiosInstance.js"
 import { useNavigate, useLocation } from 'react-router-dom';
-import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE,  SUCCESS, COMPANY_ADDRESS} from '../config/config'
+import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE,  SUCCESS, COMPANY_ADDRESS} from '../config/config.js'
 
 
 function Contact() {

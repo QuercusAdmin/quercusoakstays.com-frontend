@@ -1,8 +1,8 @@
 import React, { useState,useEffect } from "react";
 import { HashLink } from "react-router-hash-link";
 import { toast } from "react-toastify";
-import axiosInstance from "../axiosInstance"
-import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE, EMAIL_REGEX, NEWS_LETTER, SUCCESS,  COMPANY_FACEBOOK_HANDLE_URL, COMPANY_LINKEDIN_HANDLE_URL, COMPANY_INSTAGRAM_HANDLE_URL, COMPANY_YOUTUBE_HANDLE_URL, COMPANY_X_HANDLE_URL, COMPANY_DISCORD_HANDLE_URL, COMPANY_ADDRESS, COMPANY_INFO} from '../config/config'
+import axiosInstance from "../axiosInstance.js"
+import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE, EMAIL_REGEX, NEWS_LETTER, SUCCESS,  COMPANY_FACEBOOK_HANDLE_URL, COMPANY_LINKEDIN_HANDLE_URL, COMPANY_INSTAGRAM_HANDLE_URL, COMPANY_YOUTUBE_HANDLE_URL, COMPANY_X_HANDLE_URL, COMPANY_DISCORD_HANDLE_URL, COMPANY_ADDRESS, COMPANY_INFO} from '../config/config.js'
 
 import { useNavigate } from 'react-router-dom';
 

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo,useRef } from "react";
-import Header2 from "../components/Header2";
-import Footer from "../components/Footer";
+import Header2 from "../components/Header2.jsx";
+import Footer from "../components/Footer.jsx";
 import moment from "moment";
 import { toast } from "react-toastify";
 import PhoneInput from "react-phone-input-2";
@@ -30,7 +30,7 @@ import {
 } from "react-icons/fa";
 import { BsHouseDoor,BsAwardFill,BsCheckCircleFill,BsStarFill, BsDiamond } from "react-icons/bs"
 import { useLocation } from "react-router-dom";
-import { WHATSAPP_CHAT_NUMBER } from '../config/config'
+import { WHATSAPP_CHAT_NUMBER } from '../config/config.js'
 
 function PropertyView() {
 

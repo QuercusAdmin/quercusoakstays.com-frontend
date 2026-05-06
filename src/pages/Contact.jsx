@@ -141,7 +141,12 @@ function Contact() {
                   </div>
                   <div className="ms-3">
                     <h5 className="text-primary">Mobile</h5>
-                    <p className="mb-0 text-dark">{COMPANY_PHONE}</p>
+                      <a 
+                        href={`tel:+${COMPANY_PHONE}`} 
+                        className="mb-0 text-dark text-decoration-none"
+                      >
+                        +{COMPANY_PHONE?.substring(0,2)} {COMPANY_PHONE?.substring(2)}
+                      </a>
                   </div>
                 </div>
                 <div className="d-flex align-items-center">

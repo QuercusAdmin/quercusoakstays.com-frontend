@@ -61,7 +61,7 @@ export default function Footer() {
            {/* Footer Start */}
     <div
       className="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn"
-      data-wow-delay="0.1s"
+      data-wow-delay="0.01s"
     >
       <div className="container py-5">
         <div className="row g-5">
@@ -195,7 +195,12 @@ export default function Footer() {
             </p>
             <p className="mb-2 text-white ">
               <i className="fa fa-phone me-3" />
-              {COMPANY_PHONE}
+                <a 
+                  href={`tel:+${COMPANY_PHONE}`} 
+                  className="text-white text-decoration-none"
+                >
+                  +{COMPANY_PHONE?.substring(0,2)} {COMPANY_PHONE?.substring(2)}
+                </a>
             </p>
             <p className="mb-2 text-white ">
               <i className="fa fa-envelope me-3" />
@@ -339,6 +344,8 @@ export default function Footer() {
                 <a onClick={(e)=>handleContact(e)} className="custom-link"> Contact Us&nbsp; </a>
                 <a>{ `   |   `}&nbsp;</a>  
                 <a href={'/#faq'} className="custom-link" > FAQ's&nbsp;</a>
+                <a>{ `   |   `}&nbsp;</a>  
+                <a href={'/login'} className="custom-link" >&nbsp;<i className="fa fa-cog me-3" /></a>
 
 
                  

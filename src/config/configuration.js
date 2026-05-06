@@ -22,6 +22,7 @@ module.exports = {
     COMPANY_X_HANDLE_URL:"",
     COMPANY_DISCORD_HANDLE_URL:"",
     BOOK_DEMO_URL : "",
+    DEBUG_LOG : false,
     COMPANY_PHONE : "919119772488",
     WHATSAPP_CHAT_NUMBER : "919119772488",
     WHATSAPP_LIST_MESSAGE : "Hello! I'm interested in inquiring about Hosting my property with you. Please let me know the best way to proceed. Thanks!",

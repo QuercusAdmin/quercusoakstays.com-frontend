@@ -54,8 +54,12 @@ function  Header() {
               </div>
               <div className="me-2 text-light" style={{ fontSize: '12px' }}>
                 <i className="fa fa-phone me-2" style={{ fontSize: '11px' }}/>
-                {COMPANY_PHONE}
-              </div>
+                <a 
+                  href={`tel:+${COMPANY_PHONE}`} 
+                  className="text-white text-decoration-none"
+                >
+                  +{COMPANY_PHONE?.substring(0,2)} {COMPANY_PHONE?.substring(2)}
+                </a>              </div>
               <div className="text-light" style={{ fontSize: '12px' }}>
                 <i className="fa fa-envelope-open me-2" style={{ fontSize: '11px' }}/>
                 <a className="text-white" style={{ fontSize: '11px' }} href={`mailto:${COMPANY_EMAIL}`}>{COMPANY_EMAIL}</a>
@@ -109,8 +113,13 @@ function  Header() {
       <div className="container-fluid position-relative p-0">
         <nav className={`navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0 ${isMobile ? 'fixed-top bg-white shadow-sm' : ''}`}>
           <div  className="logo-banner-container">
-            <img src={require('../assets/img/logolight135x255.png')} alt="Logo" className="logo-banner-image2 custom-logo-light" />
-            <img src={require('../assets/img/logolight135x255.png')} alt="Logo" className="logo-banner-image custom-logo-dark" />
+
+            
+            <Link to={'/'}  style={{ userSelect: "none", textDecoration: "none" }}>
+              <img src={require('../assets/img/logolight135x255.png')} alt="Logo" className="logo-banner-image2 custom-logo-light" />
+              <img src={require('../assets/img/logolight135x255.png')} alt="Logo" className="logo-banner-image custom-logo-dark" />
+            </Link>
+
             <Link to={'/'}  style={{ userSelect: "none", textDecoration: "none" }}>
               <p className="logo-banner-text">
                 <span className="bettermy-text1">Quercus Oak Stays</span> 

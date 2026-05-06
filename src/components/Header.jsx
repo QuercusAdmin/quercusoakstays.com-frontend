@@ -166,9 +166,12 @@ function  Header() {
                   }
                 }}
               >About</a>
-
-              <a href='/properties' className="nav-item nav-link nav-customn"
-              >Properties</a>
+              
+              <Link to='/properties' className="nav-item nav-link nav-custom">
+                Properties
+              </Link>
+              {/* <a href='/properties' className="nav-item nav-link nav-customn"
+              >Properties</a> */}
 
               <a href='/#gallery' className="nav-item nav-link nav-customn"
                 onClick={(e) => {
@@ -182,7 +185,7 @@ function  Header() {
                     e.preventDefault();
                     const element = document.getElementById('gallery');
                     if (element) {
-                      const headerOffset = 100; 
+                      const headerOffset = 50; 
                       const elementPosition = element.getBoundingClientRect().top;
                       const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 

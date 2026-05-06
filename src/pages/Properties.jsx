@@ -23,133 +23,6 @@ import { useNavigate, useLocation } from 'react-router-dom';
 import PriceRangeSlider from "../components/PriceRangeSlider.jsx";
 
 const propertiesDummyData=[{
-  "_id": "69f9e2593bfd4d8a43567208",
-  "title": "Aspen Heights Luxury Stays",
-  "tag": "Forest-Luxe",
-  "locality": "Crown Brewery Estate, Barloganj",
-  "description": "Tucked away from the \"maddening crowds,\" Aspen Heights Luxury Stays is a sanctuary of peace nestled within a dense oak forest at the foothills of the Himalayas. Located on a tranquil road leading to Mussoorie, this homestay offers a masterclass in understated luxury, where stunning panoramas of the Dehradun valley and the rolling hills beyond greet you at every turn. Truly a \"home away from home,\" Aspen Heights is defined by its remarkable architecture, which was thoughtfully built around existing trees to preserve the lush greenery. Whether you are seeking a strategic base away from the bustle of Mussoorie or a blissful retreat immersed in plunging valleys and forest trails, this unique mountain dwelling offers an unparalleled connection to nature without compromising on modern sophistication.",
-  "propertyType": "Boutique Property",
-  "location": "mussoorie",
-  "address": "Crown Brewery Estate Nala Pani, Barlow Ganj Rd, Barlow Ganj, Mussoorie, Uttarakhand 248179",
-  "price": 35000,
-  "spaceDetails": {
-    "bedrooms": 6,
-    "bathrooms": 6,
-    "guests": 12,
-    "size": "3200",
-    "livingArea": true,
-    "diningArea": true,
-    "kitchen": "staff",
-    "driverAccommodation": true
-  },
-  "amenities": [
-    "High-Speed WiFi",
-    "Gourmet Kitchen",
-    "Secure Parking",
-    "Fireplace",
-    "Garden",
-    "Terrace",
-    "BBQ Area",
-    "Balcony",
-    "Laundry"
-  ],
-  "badges": [
-    "Luxury Collection",
-    "Romantic Getaway",
-    "Award Winner",
-    "Nature Retreat",
-    "Romantic Hideaways",
-    "Weekend Getaway",
-    "Instagram Worthy"
-  ],
-  "featured": false,
-  "images": [
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/zjuh1yya3vffpkvairos",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066163/property/69f9e2593bfd4d8a43567208/zjuh1yya3vffpkvairos.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/p6sjjy8ojopoqowxj3p8",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066164/property/69f9e2593bfd4d8a43567208/p6sjjy8ojopoqowxj3p8.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/npmuyvck8q9nm8btfvmi",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066167/property/69f9e2593bfd4d8a43567208/npmuyvck8q9nm8btfvmi.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/x2sdcqvzrz9o2to2rquk",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066169/property/69f9e2593bfd4d8a43567208/x2sdcqvzrz9o2to2rquk.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/rkbz7btfo4zr4n8q1kpi",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066172/property/69f9e2593bfd4d8a43567208/rkbz7btfo4zr4n8q1kpi.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/zdrud0gcgm0nxijplqxb",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066174/property/69f9e2593bfd4d8a43567208/zdrud0gcgm0nxijplqxb.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/mz52qytx78zlm3jtt3pi",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066176/property/69f9e2593bfd4d8a43567208/mz52qytx78zlm3jtt3pi.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/gvulfwxgtg5542xppnim",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066178/property/69f9e2593bfd4d8a43567208/gvulfwxgtg5542xppnim.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/idy2rwwpvwxhlt1lgpyb",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066181/property/69f9e2593bfd4d8a43567208/idy2rwwpvwxhlt1lgpyb.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/fcpoph2pnbfz3v7nouuh",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066183/property/69f9e2593bfd4d8a43567208/fcpoph2pnbfz3v7nouuh.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/vfatd1eyz266nz947hdv",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066185/property/69f9e2593bfd4d8a43567208/vfatd1eyz266nz947hdv.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/idqsfyaurcseevqxd7g0",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066189/property/69f9e2593bfd4d8a43567208/idqsfyaurcseevqxd7g0.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/qkpkvvhxl1xqylfvvfyr",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066192/property/69f9e2593bfd4d8a43567208/qkpkvvhxl1xqylfvvfyr.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/x9b5kpebngmuvzts1nub",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066194/property/69f9e2593bfd4d8a43567208/x9b5kpebngmuvzts1nub.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567208/uky1rhhj71xcabml62ro",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066196/property/69f9e2593bfd4d8a43567208/uky1rhhj71xcabml62ro.jpg",
-      "alt": "Aspen Heights Luxury Stays"
-    }
-  ],
-  "specialFeatures": "",
-  "mapLocation": "https://maps.app.goo.gl/gKRGuHxXhpoF1HG9A",
-  "rating": 4.9,
-  "isTaxable": true,
-  "updatedAt": {
-    "$date": "2026-05-06T11:16:36.307Z"
-  },
-  "show": true
-},
-{
   "_id": "69f9e2593bfd4d8a43567205",
   "title": "Plutus Luxury Boutique Stay",
   "tag": "Popular",
@@ -189,6 +62,11 @@ const propertiesDummyData=[{
   ],
   "featured": true,
   "images": [
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567205/dofs7p6ywxywkirptats",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778041439/property/69f9e2593bfd4d8a43567205/dofs7p6ywxywkirptats.jpg",
+      "alt": "Plutus Luxury Boutique Stay"
+    },
     {
       "public_id": "property/69f9e2593bfd4d8a43567205/mz4utrfhclw9y73dwluy",
       "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778041419/property/69f9e2593bfd4d8a43567205/mz4utrfhclw9y73dwluy.jpg",
@@ -232,11 +110,6 @@ const propertiesDummyData=[{
     {
       "public_id": "property/69f9e2593bfd4d8a43567205/i2kwmwpuhow6us5iwasp",
       "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778041437/property/69f9e2593bfd4d8a43567205/i2kwmwpuhow6us5iwasp.jpg",
-      "alt": "Plutus Luxury Boutique Stay"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567205/dofs7p6ywxywkirptats",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778041439/property/69f9e2593bfd4d8a43567205/dofs7p6ywxywkirptats.jpg",
       "alt": "Plutus Luxury Boutique Stay"
     },
     {
@@ -300,155 +173,7 @@ const propertiesDummyData=[{
   "show": true
 },
 {
-  "_id": "69f9e2593bfd4d8a43567209",
-  "title": "Grandeur Luxe Apartment",
-  "tag": "Modern Luxe",
-  "locality": "Mall Road",
-  "description": "Located in the vibrant heart of Mall Road, Grandeur Luxe Apartment by Quercus Oak Stays is the pinnacle of urban mountain luxury. This expansive 8-bedroom residence spans 3,200 square feet, offering a rare combination of high-capacity living and sophisticated \"modern luxe\" design. Every room is a masterclass in contemporary comfort, featuring sleek interiors, smart technology, and private balconies that overlook the bustling charm of Mussoorie and the majestic hills beyond. Perfect for large family reunions or corporate retreats of up to 20 guests, the apartment provides seamless access to the city’s best cafes and viewpoints while maintaining an atmosphere of exclusive privacy. From the sun-soaked terrace to the centrally air-conditioned suites, Grandeur Luxe ensures an effortless and high-end stay in the 'Queen of Hill'.",
-  "propertyType": "Apartment",
-  "location": "mussoorie",
-  "address": "Mall Road (Central Area), Mussoorie, Uttarakhand 248122",
-  "price": 12000,
-  "spaceDetails": {
-    "bedrooms": 3,
-    "bathrooms": 3,
-    "guests": 10,
-    "size": "2400",
-    "livingArea": true,
-    "diningArea": true,
-    "kitchen": "self",
-    "driverAccommodation": false
-  },
-  "amenities": [
-    "Smart TV",
-    "High-Speed WiFi",
-    "Garden",
-    "Balcony",
-    "Secure Parking",
-    "Terrace",
-    "Central AC"
-  ],
-  "badges": [
-    "Luxury Collection",
-    "Romantic Getaway",
-    "Family Friendly",
-    "Business Travel",
-    "Couple Friendly"
-  ],
-  "featured": false,
-  "images": [
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/itw0hxlquw44oetknf1h",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007510/property/69f9e2593bfd4d8a43567209/itw0hxlquw44oetknf1h.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/qslzkdrecg64zbxbmzpv",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007501/property/69f9e2593bfd4d8a43567209/qslzkdrecg64zbxbmzpv.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/yd3t88jkqyqemyggckc2",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007502/property/69f9e2593bfd4d8a43567209/yd3t88jkqyqemyggckc2.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/zzu6bcssy3b0lha1hcaw",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007504/property/69f9e2593bfd4d8a43567209/zzu6bcssy3b0lha1hcaw.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/hobhsqeoe1wl9icxmlqn",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007505/property/69f9e2593bfd4d8a43567209/hobhsqeoe1wl9icxmlqn.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/da7bzfxktp1wiso1odne",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007507/property/69f9e2593bfd4d8a43567209/da7bzfxktp1wiso1odne.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/skswsia4cpfzssa4ianu",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007508/property/69f9e2593bfd4d8a43567209/skswsia4cpfzssa4ianu.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/t819c9x2rbmsg3udglzj",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007499/property/69f9e2593bfd4d8a43567209/t819c9x2rbmsg3udglzj.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/nbiedr5ptkmq7nultexz",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007512/property/69f9e2593bfd4d8a43567209/nbiedr5ptkmq7nultexz.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/hmorckorykhu3qjyuxlj",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007513/property/69f9e2593bfd4d8a43567209/hmorckorykhu3qjyuxlj.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/hfubjctybbcvlmzp2f5g",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007514/property/69f9e2593bfd4d8a43567209/hfubjctybbcvlmzp2f5g.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/p1cyxn0vejfin21r7yns",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007516/property/69f9e2593bfd4d8a43567209/p1cyxn0vejfin21r7yns.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/sbv7vw0q96kzkbes1qr2",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007517/property/69f9e2593bfd4d8a43567209/sbv7vw0q96kzkbes1qr2.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/wi6mdlixvhuccmopf6hg",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007518/property/69f9e2593bfd4d8a43567209/wi6mdlixvhuccmopf6hg.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/eltdhg3s6enuo8unyh7p",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007520/property/69f9e2593bfd4d8a43567209/eltdhg3s6enuo8unyh7p.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/mz9lcunnzawfz6ieo3kk",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007521/property/69f9e2593bfd4d8a43567209/mz9lcunnzawfz6ieo3kk.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/av30wrsb3okr9j0ggvh2",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007523/property/69f9e2593bfd4d8a43567209/av30wrsb3okr9j0ggvh2.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/uq4l2ubmobx7soxfci49",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007524/property/69f9e2593bfd4d8a43567209/uq4l2ubmobx7soxfci49.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/h3btl5wrjz8wabc3zsiu",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007524/property/69f9e2593bfd4d8a43567209/h3btl5wrjz8wabc3zsiu.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    },
-    {
-      "public_id": "property/69f9e2593bfd4d8a43567209/eimpstafw1wtflfpmfuw",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007525/property/69f9e2593bfd4d8a43567209/eimpstafw1wtflfpmfuw.jpg",
-      "alt": "Grandeur Luxe Apartment"
-    }
-  ],
-  "specialFeatures": "",
-  "mapLocation": "https://maps.app.goo.gl/35zWwshCTDdV9b4g9",
-  "rating": 4.5,
-  "isTaxable": true,
-  "updatedAt": {
-    "$date": "2026-05-05T18:58:45.449Z"
-  },
-  "show": true
-},
-{
-  "_id":  "69f9e2593bfd4d8a43567206",
+  "_id": "69f9e2593bfd4d8a43567206",
   "title": "Mackenzie Luxury Boutique Stays",
   "tag": "Top Rated",
   "locality": "Hathipaon Road, Sher Garhi",
@@ -489,6 +214,11 @@ const propertiesDummyData=[{
   ],
   "featured": true,
   "images": [
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567206/w923rjy2cachr64theae",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778043267/property/69f9e2593bfd4d8a43567206/w923rjy2cachr64theae.jpg",
+      "alt": "Mackenzie Luxury Boutique Stays"
+    },
     {
       "public_id": "property/69f9e2593bfd4d8a43567206/awynllaimfefso93sylc",
       "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778043240/property/69f9e2593bfd4d8a43567206/awynllaimfefso93sylc.jpg",
@@ -560,11 +290,6 @@ const propertiesDummyData=[{
       "alt": "Mackenzie Luxury Boutique Stays"
     },
     {
-      "public_id": "property/69f9e2593bfd4d8a43567206/w923rjy2cachr64theae",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778043267/property/69f9e2593bfd4d8a43567206/w923rjy2cachr64theae.jpg",
-      "alt": "Mackenzie Luxury Boutique Stays"
-    },
-    {
       "public_id": "property/69f9e2593bfd4d8a43567206/bofx8zzvnnmgttymd9ee",
       "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778043269/property/69f9e2593bfd4d8a43567206/bofx8zzvnnmgttymd9ee.jpg",
       "alt": "Mackenzie Luxury Boutique Stays"
@@ -585,6 +310,9 @@ const propertiesDummyData=[{
       "alt": "Mackenzie Luxury Boutique Stays"
     }
   ],
+  "specialFeatures": "",
+  "mapLocation": "https://maps.app.goo.gl/TVQG3THikmdjvxNj9",
+  "rating": 4.8,
   "rooms": [
     {
       "roomType": "Premium Room with Mountain View",
@@ -711,9 +439,6 @@ const propertiesDummyData=[{
       "extraBeddingPrice": 1000
     }
   ],
-  "specialFeatures": "",
-  "mapLocation": "https://maps.app.goo.gl/TVQG3THikmdjvxNj9",
-  "rating": 4.8,
   "isTaxable": true,
   "updatedAt": {
     "$date": "2026-05-06T04:54:33.707Z"
@@ -876,6 +601,281 @@ const propertiesDummyData=[{
   "show": true
 },
 {
+  "_id": "69f9e2593bfd4d8a43567208",
+  "title": "Aspen Heights Luxury Stays",
+  "tag": "Forest-Luxe",
+  "locality": "Crown Brewery Estate, Barloganj",
+  "description": "Tucked away from the \"maddening crowds,\" Aspen Heights Luxury Stays is a sanctuary of peace nestled within a dense oak forest at the foothills of the Himalayas. Located on a tranquil road leading to Mussoorie, this homestay offers a masterclass in understated luxury, where stunning panoramas of the Dehradun valley and the rolling hills beyond greet you at every turn. Truly a \"home away from home,\" Aspen Heights is defined by its remarkable architecture, which was thoughtfully built around existing trees to preserve the lush greenery. Whether you are seeking a strategic base away from the bustle of Mussoorie or a blissful retreat immersed in plunging valleys and forest trails, this unique mountain dwelling offers an unparalleled connection to nature without compromising on modern sophistication.",
+  "propertyType": "Boutique Property",
+  "location": "mussoorie",
+  "address": "Crown Brewery Estate Nala Pani, Barlow Ganj Rd, Barlow Ganj, Mussoorie, Uttarakhand 248179",
+  "price": 35000,
+  "spaceDetails": {
+    "bedrooms": 6,
+    "bathrooms": 6,
+    "guests": 12,
+    "size": "3200",
+    "livingArea": true,
+    "diningArea": true,
+    "kitchen": "staff",
+    "driverAccommodation": true
+  },
+  "amenities": [
+    "High-Speed WiFi",
+    "Gourmet Kitchen",
+    "Secure Parking",
+    "Fireplace",
+    "Garden",
+    "Terrace",
+    "BBQ Area",
+    "Balcony",
+    "Laundry"
+  ],
+  "badges": [
+    "Luxury Collection",
+    "Romantic Getaway",
+    "Award Winner",
+    "Nature Retreat",
+    "Romantic Hideaways",
+    "Weekend Getaway",
+    "Instagram Worthy"
+  ],
+  "featured": false,
+  "images": [
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/qkpkvvhxl1xqylfvvfyr",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066192/property/69f9e2593bfd4d8a43567208/qkpkvvhxl1xqylfvvfyr.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/zjuh1yya3vffpkvairos",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066163/property/69f9e2593bfd4d8a43567208/zjuh1yya3vffpkvairos.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/p6sjjy8ojopoqowxj3p8",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066164/property/69f9e2593bfd4d8a43567208/p6sjjy8ojopoqowxj3p8.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/npmuyvck8q9nm8btfvmi",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066167/property/69f9e2593bfd4d8a43567208/npmuyvck8q9nm8btfvmi.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/x2sdcqvzrz9o2to2rquk",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066169/property/69f9e2593bfd4d8a43567208/x2sdcqvzrz9o2to2rquk.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/rkbz7btfo4zr4n8q1kpi",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066172/property/69f9e2593bfd4d8a43567208/rkbz7btfo4zr4n8q1kpi.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/zdrud0gcgm0nxijplqxb",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066174/property/69f9e2593bfd4d8a43567208/zdrud0gcgm0nxijplqxb.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/mz52qytx78zlm3jtt3pi",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066176/property/69f9e2593bfd4d8a43567208/mz52qytx78zlm3jtt3pi.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/gvulfwxgtg5542xppnim",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066178/property/69f9e2593bfd4d8a43567208/gvulfwxgtg5542xppnim.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/idy2rwwpvwxhlt1lgpyb",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066181/property/69f9e2593bfd4d8a43567208/idy2rwwpvwxhlt1lgpyb.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/fcpoph2pnbfz3v7nouuh",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066183/property/69f9e2593bfd4d8a43567208/fcpoph2pnbfz3v7nouuh.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/vfatd1eyz266nz947hdv",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066185/property/69f9e2593bfd4d8a43567208/vfatd1eyz266nz947hdv.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/idqsfyaurcseevqxd7g0",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066189/property/69f9e2593bfd4d8a43567208/idqsfyaurcseevqxd7g0.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/x9b5kpebngmuvzts1nub",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066194/property/69f9e2593bfd4d8a43567208/x9b5kpebngmuvzts1nub.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567208/uky1rhhj71xcabml62ro",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778066196/property/69f9e2593bfd4d8a43567208/uky1rhhj71xcabml62ro.jpg",
+      "alt": "Aspen Heights Luxury Stays"
+    }
+  ],
+  "specialFeatures": "",
+  "mapLocation": "https://maps.app.goo.gl/gKRGuHxXhpoF1HG9A",
+  "rating": 4.9,
+  "isTaxable": true,
+  "updatedAt": {
+    "$date": "2026-05-06T11:16:36.307Z"
+  },
+  "show": true
+},
+{
+  "_id": "69f9e2593bfd4d8a43567209",
+  "title": "Grandeur Luxe Apartment",
+  "tag": "Modern Luxe",
+  "locality": "Mall Road",
+  "description": "Located in the vibrant heart of Mall Road, Grandeur Luxe Apartment by Quercus Oak Stays is the pinnacle of urban mountain luxury. This expansive 8-bedroom residence spans 3,200 square feet, offering a rare combination of high-capacity living and sophisticated \"modern luxe\" design. Every room is a masterclass in contemporary comfort, featuring sleek interiors, smart technology, and private balconies that overlook the bustling charm of Mussoorie and the majestic hills beyond. Perfect for large family reunions or corporate retreats of up to 20 guests, the apartment provides seamless access to the city’s best cafes and viewpoints while maintaining an atmosphere of exclusive privacy. From the sun-soaked terrace to the centrally air-conditioned suites, Grandeur Luxe ensures an effortless and high-end stay in the 'Queen of Hill'.",
+  "propertyType": "Apartment",
+  "location": "mussoorie",
+  "address": "Mall Road (Central Area), Mussoorie, Uttarakhand 248122",
+  "price": 12000,
+  "spaceDetails": {
+    "bedrooms": 3,
+    "bathrooms": 3,
+    "guests": 10,
+    "size": "2400",
+    "livingArea": true,
+    "diningArea": true,
+    "kitchen": "self",
+    "driverAccommodation": false
+  },
+  "amenities": [
+    "Smart TV",
+    "High-Speed WiFi",
+    "Garden",
+    "Balcony",
+    "Secure Parking",
+    "Terrace",
+    "Central AC"
+  ],
+  "badges": [
+    "Luxury Collection",
+    "Romantic Getaway",
+    "Family Friendly",
+    "Business Travel",
+    "Couple Friendly"
+  ],
+  "featured": false,
+  "images": [
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/itw0hxlquw44oetknf1h",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007510/property/69f9e2593bfd4d8a43567209/itw0hxlquw44oetknf1h.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/qslzkdrecg64zbxbmzpv",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007501/property/69f9e2593bfd4d8a43567209/qslzkdrecg64zbxbmzpv.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/yd3t88jkqyqemyggckc2",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007502/property/69f9e2593bfd4d8a43567209/yd3t88jkqyqemyggckc2.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/zzu6bcssy3b0lha1hcaw",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007504/property/69f9e2593bfd4d8a43567209/zzu6bcssy3b0lha1hcaw.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/hobhsqeoe1wl9icxmlqn",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007505/property/69f9e2593bfd4d8a43567209/hobhsqeoe1wl9icxmlqn.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/da7bzfxktp1wiso1odne",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007507/property/69f9e2593bfd4d8a43567209/da7bzfxktp1wiso1odne.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/skswsia4cpfzssa4ianu",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007508/property/69f9e2593bfd4d8a43567209/skswsia4cpfzssa4ianu.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/t819c9x2rbmsg3udglzj",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007499/property/69f9e2593bfd4d8a43567209/t819c9x2rbmsg3udglzj.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/nbiedr5ptkmq7nultexz",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007512/property/69f9e2593bfd4d8a43567209/nbiedr5ptkmq7nultexz.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/hmorckorykhu3qjyuxlj",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007513/property/69f9e2593bfd4d8a43567209/hmorckorykhu3qjyuxlj.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/hfubjctybbcvlmzp2f5g",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007514/property/69f9e2593bfd4d8a43567209/hfubjctybbcvlmzp2f5g.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/p1cyxn0vejfin21r7yns",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007516/property/69f9e2593bfd4d8a43567209/p1cyxn0vejfin21r7yns.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/sbv7vw0q96kzkbes1qr2",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007517/property/69f9e2593bfd4d8a43567209/sbv7vw0q96kzkbes1qr2.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/wi6mdlixvhuccmopf6hg",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007518/property/69f9e2593bfd4d8a43567209/wi6mdlixvhuccmopf6hg.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/eltdhg3s6enuo8unyh7p",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007520/property/69f9e2593bfd4d8a43567209/eltdhg3s6enuo8unyh7p.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/mz9lcunnzawfz6ieo3kk",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007521/property/69f9e2593bfd4d8a43567209/mz9lcunnzawfz6ieo3kk.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/av30wrsb3okr9j0ggvh2",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007523/property/69f9e2593bfd4d8a43567209/av30wrsb3okr9j0ggvh2.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/uq4l2ubmobx7soxfci49",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007524/property/69f9e2593bfd4d8a43567209/uq4l2ubmobx7soxfci49.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/h3btl5wrjz8wabc3zsiu",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007524/property/69f9e2593bfd4d8a43567209/h3btl5wrjz8wabc3zsiu.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    },
+    {
+      "public_id": "property/69f9e2593bfd4d8a43567209/eimpstafw1wtflfpmfuw",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007525/property/69f9e2593bfd4d8a43567209/eimpstafw1wtflfpmfuw.jpg",
+      "alt": "Grandeur Luxe Apartment"
+    }
+  ],
+  "specialFeatures": "",
+  "mapLocation": "https://maps.app.goo.gl/35zWwshCTDdV9b4g9",
+  "rating": 4.5,
+  "isTaxable": true,
+  "updatedAt": {
+    "$date": "2026-05-05T18:58:45.449Z"
+  },
+  "show": true
+},
+{
   "_id": "69fa0d8a3bfd4d8a4356720a",
   "title": "Nebulla Cottage",
   "tag": "Vantage",
@@ -917,6 +917,11 @@ const propertiesDummyData=[{
   "featured": true,
   "images": [
     {
+      "public_id": "property/69fa0d8a3bfd4d8a4356720a/wju8qlosalydswt44dyd",
+      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007114/property/69fa0d8a3bfd4d8a4356720a/wju8qlosalydswt44dyd.jpg",
+      "alt": "Nebulla Cottage"
+    },
+    {
       "public_id": "property/69fa0d8a3bfd4d8a4356720a/iwblrzrvxdr5vs08pf4w",
       "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007102/property/69fa0d8a3bfd4d8a4356720a/iwblrzrvxdr5vs08pf4w.jpg",
       "alt": "Nebulla Cottage"
@@ -929,11 +934,6 @@ const propertiesDummyData=[{
     {
       "public_id": "property/69fa0d8a3bfd4d8a4356720a/ox0ymuehlldpcv2lx3o4",
       "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007111/property/69fa0d8a3bfd4d8a4356720a/ox0ymuehlldpcv2lx3o4.jpg",
-      "alt": "Nebulla Cottage"
-    },
-    {
-      "public_id": "property/69fa0d8a3bfd4d8a4356720a/wju8qlosalydswt44dyd",
-      "url": "https://res.cloudinary.com/dp3w8apmx/image/upload/v1778007114/property/69fa0d8a3bfd4d8a4356720a/wju8qlosalydswt44dyd.jpg",
       "alt": "Nebulla Cottage"
     },
     {
@@ -1307,7 +1307,7 @@ const propertiesDummyData=[{
   "show": true
 },
 {
-  "_id":  "69fb1e6ac05a9703f36c4d3d",
+  "_id": "69fb1e6ac05a9703f36c4d3d",
   "title": "Oliva",
   "tag": "Vantage",
   "locality": "Jharipani",
@@ -1455,7 +1455,6 @@ const propertiesDummyData=[{
   "isTaxable": true,
   "show": true
 }]
-
 const locationsDummyData = [{
   "label": "Hatnikund",
   "value": "hatnikund",
@@ -1478,7 +1477,7 @@ const locationsDummyData = [{
 }]
 
 
-  const collectionsDummyData  = [
+const collectionsDummyData  = [
 
     "Luxury Collection",
     "Pet Friendly",
@@ -1600,12 +1599,16 @@ function Properties() {
 
     let temp = moment.utc().add(5,"hours").add(30,'minutes').format("YYYY-MM-DD")
     let temp1 = moment.utc().add(2,"days").add(5,"hours").add(30,'minutes').format("YYYY-MM-DD")
+
+    const tempTypes = [...new Set(propertiesDummyData.map(p => p.propertyType))];
+    const tempBadges = [...new Set(propertiesDummyData.flatMap(p => p.badges || []))];
+
     setCheckInDate(temp)
     setCheckOutDate(temp1)
     setProperties(propertiesDummyData)
     setLocations(locationsDummyData)
-    setCollections(collectionsDummyData)
-    setPropertyTypes(propertyTypesDummyData)
+    setCollections(tempBadges ?? collectionsDummyData)
+    setPropertyTypes(tempTypes ?? propertyTypesDummyData)
 
     const saved = JSON.parse(localStorage.getItem("filters"));
 
@@ -1661,6 +1664,8 @@ function Properties() {
   const filtered = properties.filter(p => {
     if (filters.locations.length && !filters.locations.includes(p.location)) return false;
     if (filters.collections.length && !p.badges.some(badge => filters.collections.includes(badge))) return false;
+    if (filters.types.length && !filters.types.includes(p.propertyType)) return false;
+
     if (p.price < priceRange[0] || p.price > priceRange[1]) return false;
     return true;
   }).sort((a, b) => {

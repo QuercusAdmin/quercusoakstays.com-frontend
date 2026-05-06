@@ -166,10 +166,21 @@ function  Header() {
                   }
                 }}
               >About</a>
-              
-              <Link to='/properties' className="nav-item nav-link nav-custom">
-                Properties
-              </Link>
+
+              <HashLink
+                 smooth
+                 to={'/properties'}
+                 scroll={(el) =>
+                   el.scrollIntoView({
+                     behavior: "smooth",
+                     block: "start",
+                     inline: "nearest",
+                   })
+                 }
+                 className="nav-item nav-link nav-customn"
+               >
+                 Properties
+               </HashLink>
               {/* <a href='/properties' className="nav-item nav-link nav-customn"
               >Properties</a> */}
 

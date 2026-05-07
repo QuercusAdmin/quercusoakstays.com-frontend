@@ -137,9 +137,10 @@ function  Header2() {
           Home
         </HashLink>
 
+
         <HashLink
           smooth
-          to={'/#about'}
+          to={window.location.pathname === '/list-property' ? '/about' : '/#about'}
           scroll={(el) =>
             el.scrollIntoView({
               behavior: "smooth",
@@ -207,13 +208,9 @@ function  Header2() {
             Contact Us
           </HashLink> 
           </div>
-          {/* <Link to="/list-property" className="btn btn-primary rounded-pill py-2 px-3 list-property">
+          <Link to="/list-property" className="btn btn-primary rounded-pill py-2 px-3 list-property">
             List Your Property
-          </Link> */}
-
-          <button onClick={(e)=>{handleListProperty(e)}} className="btn btn-primary rounded-pill py-2 px-3 list-property">
-            List Your Property
-          </button>
+          </Link>
 
         </div>
       </nav>

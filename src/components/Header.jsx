@@ -142,30 +142,53 @@ function  Header() {
               <a href='/' className="nav-item nav-link nav-customn"
               >Home</a>
 
-              <a href='/#about' className="nav-item nav-link nav-customn"
-                onClick={(e) => {
+              {
+                window.location.pathname === '/list-property' ? 
 
-                  const navbar = document.getElementById('navbarCollapse');
-                  if (navbar && navbar.classList.contains('show')) {
-                    navbar.classList.remove('show');
-                  }
-
-                  if (window.location.pathname === '/') {
-                    e.preventDefault();
-                    const element = document.getElementById('about');
-                    if (element) {
-                      const headerOffset = 100; 
-                      const elementPosition = element.getBoundingClientRect().top;
-                      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                      window.scrollTo({
-                        top: offsetPosition,
-                        behavior: "smooth"
-                      });
+                  <HashLink
+                    smooth
+                    to={'/about'}
+                    scroll={(el) =>
+                      el.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                        inline: "nearest",
+                      })
                     }
-                  }
-                }}
-              >About</a>
+                    className="nav-item nav-link nav-customn"
+                  >
+                    About
+                  </HashLink>
+                :
+
+
+                <a href='/#about' className="nav-item nav-link nav-customn"
+                  onClick={(e) => {
+  
+                    const navbar = document.getElementById('navbarCollapse');
+                    if (navbar && navbar.classList.contains('show')) {
+                      navbar.classList.remove('show');
+                    }
+  
+                    if (window.location.pathname === '/') {
+                      e.preventDefault();
+                      const element = document.getElementById('about');
+                      if (element) {
+                        const headerOffset = 100; 
+                        const elementPosition = element.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+  
+                        window.scrollTo({
+                          top: offsetPosition,
+                          behavior: "smooth"
+                        });
+                      }
+                    }
+                  }}
+                >About</a>
+
+              }
+
 
               <HashLink
                  smooth
@@ -221,13 +244,11 @@ function  Header() {
 
             </div>
 
-            {/* <Link to="/list-property" className="btn btn-primary rounded-pill py-2 px-3 list-property">
+            <Link to="/list-property" className="btn btn-primary rounded-pill py-2 px-3 list-property">
               List Your Property
-            </Link> */}
+            </Link>
 
-            <button onClick={(e)=>{handleListProperty(e)}} className="btn btn-primary rounded-pill py-2 px-3 list-property">
-              List Your Property
-            </button>
+
           </div>
         </nav>
       </div>

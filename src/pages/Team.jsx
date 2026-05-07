@@ -2,9 +2,64 @@ import React, { useState,useEffect } from "react";
 import Header2 from '../components/Header2.jsx'
 import Footer from '../components/Footer.jsx'
 
+const TeamDummy = [
+  {
+    "id": 1,
+    "name": "Atinder Pal Singh",
+    "title": "Founder & Director",
+    "experience": "8",
+    "image": "",
+    "socials": {
+      "linkedin": "#",
+      "instagram": "#",
+      "facebook":"#"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Varun Gupta",
+    "title": "Founder & Director",
+    "experience": "8",
+    "image": "",
+    "socials": {
+      "linkedin": "#",
+      "instagram": "#",
+      "facebook":"#"
+    }
+  },
+    {
+    "id": 3,
+    "name": "Mahipal Singh",
+    "title": "Founder & Director",
+    "experience": "5",
+    "image": "",
+    "socials": {
+      "linkedin": "#",
+      "instagram": "#",
+      "facebook":"#"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Swaroop Singh Bhati",
+    "title": "Founder & Director",
+    "experience": "7",
+    "image": "",
+    "socials": {
+      "linkedin": "#",
+      "instagram": "#",
+      "facebook":"#"
+    }
+  }
+];
+
 function Team() {
 
+  const [team,setTeam]=useState([])
+
     useEffect(() => {
+
+      setTeam(TeamDummy)
       const element = document.documentElement;
       element.style.scrollBehavior = 'smooth';
       element.scrollTo(0, 0);
@@ -24,107 +79,48 @@ function Team() {
           <h1 className="mb-5">Meet Our Amazing Team</h1>
         </div>
         <div className="row g-4">
-   
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src={require(`../assets/img/team-3.jpg`)} alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Full Name</h5>
-                <small>Chief Visionary Officer</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src={require(`../assets/img/team-3.jpg`)} alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Atinder Pal Sodhi</h5>
-                <small>Director</small>
+
+          {team.map((value, i) => (
+
+    
+            <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay={`0.${i+1}s`}>
+              <div className="team-item">
+                <div className="overflow-hidden">
+                  <img className="img-fluid" src={value.image!=="" ? value.image : require(`../assets/img/team-3.jpg`)} alt="" />
+                </div>
+                <div
+                  className="position-relative d-flex justify-content-center"
+                  style={{ marginTop: "-19px" }}
+                >
+                  <a className="btn btn-square mx-1" href={value.socials.linkedin}>
+                    <i className="fab fa-linkedin-in" />
+                  </a>
+                  <a className="btn btn-square mx-1" href={value.socials.facebook}>
+                    <i className="fab fa-facebook-f" />
+                  </a>
+                  <a className="btn btn-square mx-1" href={value.socials.instagram}>
+                    <i className="fab fa-instagram" />
+                  </a>
+                </div>
+                <div className="text-center p-4">
+
+                  <h5 className="mb-1">{value.name}</h5>
+                  <div className="mb-1">
+                    <small className="text-muted fw-bold">
+                      {value.experience}+ Years Experience
+                    </small>
+                  </div>
+                  <div>
+                    <small className="text-primary text-uppercase fw-bold">
+                      {value.title}
+                    </small>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src={require(`../assets/img/team-1.jpg`)} alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Varun Gupta</h5>
-                <small>Director</small>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-            <div className="team-item">
-              <div className="overflow-hidden">
-                <img className="img-fluid" src={require(`../assets/img/team-1.jpg`)} alt="" />
-              </div>
-              <div
-                className="position-relative d-flex justify-content-center"
-                style={{ marginTop: "-19px" }}
-              >
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-facebook-f" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-twitter" />
-                </a>
-                <a className="btn btn-square mx-1" href="">
-                  <i className="fab fa-instagram" />
-                </a>
-              </div>
-              <div className="text-center p-4">
-                <h5 className="mb-0">Mahipal Singh</h5>
-                <small>Director</small>
-              </div>
-            </div>
-          </div>
+
+          ))}
+
         </div>
       </div>
     </div>

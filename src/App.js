@@ -15,6 +15,7 @@ import {WHATSAPP_CHAT_NUMBER,WHATSAPP_CHAT_MESSAGE} from './config/configuration
 import { ToastContainer, toast, Slide } from "react-toastify";
 import PropertyView from './pages/PropertyView.jsx';
 import Login from './pages/Login.jsx';
+import { useNavigate } from 'react-router-dom';
 // import Dashboard from './component/dashboard';
 // import Forgot from './component/forget';
 // import Otp from './component/otp';
@@ -23,11 +24,13 @@ import Login from './pages/Login.jsx';
 // import GraphicalAnalysis from './component/graphical-analysis';
 
 import { debugLog, isLoggedIn } from './utils';
+import PropertyList from './pages/PropertyList.jsx';
+import About from './pages/About.jsx';
 
 export default function App() {
   const [ShowTopBtn, setShowTopBtn] = useState(false);
   const [isOnline, setOnline] = useState(true);
-
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -129,10 +132,12 @@ export default function App() {
               <Route path='/contact-us' element={<Contact/>}/>
               <Route path='/properties' element={<Properties/>}/>
               <Route path='/property/view/:id' element={<PropertyView/>}/>
+              <Route path='/list-property' element={<PropertyList/>}/>
               <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
               <Route path='/terms-and-conditions' element={<TermsAndCondition/>}/>
               <Route path='/refund-policy' element={<RefundPolicy/>}/>
               <Route path='/cookies' element={<Cookies/>}/>
+              <Route path='/about' element={<About/>}/>
               <Route path='/team' element={<Team/>}/>
               <Route path="*" element={<Navigate to="/" />} />
               <Route path='/login' element={<Login/>}/>
@@ -160,8 +165,8 @@ export default function App() {
                 href="#" 
                 onClick={(e) => { e.preventDefault();
                  
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                  //  window.location.reload()
+                    navigate(window.location.pathname, { replace: true });
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
                  }}
                 className={`btn btn-lg btn-primary back-to-top-button fs-6`}
               >

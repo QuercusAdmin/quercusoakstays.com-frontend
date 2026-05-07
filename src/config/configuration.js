@@ -1,8 +1,8 @@
 module.exports = {
     
-    baseUrl : "",
-    backendIP : "",
-    AXIOS_APIKEY : '',   
+    baseUrl : "http://localhost:3837/api/v1/",
+    backendIP : "http://localhost:3837",
+    AXIOS_APIKEY : '68e3bfe2bc127e61cc01e2e3f3f029704b0a',   
     SUCCESS:200,
     MARQUEE_COUNT:12,
     TIME_SAVING_COUNT:80,

@@ -4,8 +4,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import Marquee from '../components/Marquee.jsx';
 import FAQS from '../components/FAQ.jsx';
-import IncrementTansition from '../components/IncrementTansition.jsx';
-import IncrementTransitionWrapper from '../components/IncrementTransitionWrapper.jsx';
+
 import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 import { toast } from "react-toastify";
@@ -2940,123 +2939,6 @@ export default function Home() {
       {/* Why Us End */}
 
 
-    {/* Number and Statistics Start*/}
-
-      {/* <div className="container-xxl py-5" id='numbers'>
-        <div className="container">
-          <div className="text-center wow fadeInUp" data-wow-delay="0.02s">
-            <h6 className="section-title bg-white text-center text-primary px-3">
-              The Number's Speak
-            </h6>
-            <h1 className="mb-5">Transform Your Hotel's Performance</h1>
-          </div>
-          <div className="row g-4">
-            <div className=" col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.02s" >
-              <div className="service-item1 rounded pt-3" >
-                <div className="p-4">
-                <i className="fa fa-3x fa-hourglass-half  fa-3x text-primary mb-4" />
-                <IncrementTransitionWrapper >
-                  <IncrementTansition n={TIME_SAVING_COUNT} symbol1={`~`}  symbol2={`%`}/>
-                  </IncrementTransitionWrapper>
-                  <h5>Time Savings</h5> 
-                  <p>
-                  Faster Check-In's, Checkout's and Operational Processes
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" >
-              <div className="service-item1 rounded pt-3">
-                <div className="p-4">
-                <i className="fa-solid fa-chart-simple  fa-3x text-primary mb-4" />
-                <IncrementTransitionWrapper>
-                  <IncrementTansition n={REVENUE_GROWTH_COUNT} symbol1={`~`}  symbol2={`%`}/>
-                  </IncrementTransitionWrapper>
-                  <h5>RevPAR Lift </h5>
-                  <p>
-                  Maximize RevPAR with AI-driven upselling and Personalized Guest Offers.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-              <div className="service-item1 rounded pt-3">
-                <div className="p-4">
-                  <i className="fa fa-3x fa-check-circle text-primary mb-4" />
-                  <IncrementTransitionWrapper>
-                  <IncrementTansition n={STAFF_EFFICIENCY_COUNT} symbol1={`~`}  symbol2={`%`}/>
-                  </IncrementTransitionWrapper>
-                  <h5>Enhancing Staff Efficiency</h5>
-                  <p>
-                    Minimizing Administrative Burden. Enhanced Staff Oversight
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-              <div className="service-item1 rounded pt-3">
-                <div className="p-4">
-                  <i className="fa-regular fa-face-smile fa-3x text-primary mb-4" />
-                  <IncrementTransitionWrapper>
-                  <IncrementTansition n={GUEST_SATISFACTION_COUNT} symbol1={`~`}  symbol2={`%`}/>
-                  </IncrementTransitionWrapper>
-                  <h5>Loyalty Growth</h5>
-                  <p>
-                  Elevating Guest Satisfaction. Delivering  Exceptional Experiences
-                  </p>
-                </div>
-              </div>
-            </div>
-        
-            <div style={{display:'flex',alignItems:'center',justifyContent:'center', flexWrap:"wrap"}}>
-
-            <div className="col-lg-3 col-sm-6 wow fadeInUp " data-wow-delay="0.02s">
-              <div className="service-item1 rounded pt-3">
-                <div className="p-4">
-                  <i className="fa fa-3x fa-link text-primary mb-4" />
-                  <IncrementTransitionWrapper>
-                  <IncrementTansition n={OPERATION_VISIBILITY_COUNT} symbol1={`~`}  symbol2={`%`}/>
-                  </IncrementTransitionWrapper>
-                  <h5>NPS Score Boost</h5>
-                  <p>
-                  Boost guest loyalty and satisfaction with seamless digital touchpoints and instant feedback loops.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s" >
-              <div className="service-item1 rounded pt-3">
-                <div className="p-4">
-                  <i className="fa fa-3x fa-solid fa-comments text-primary mb-4" />
-                  <IncrementTransitionWrapper>
-                  <IncrementTansition n={GUEST_FEEDBACK_COUNT} symbol1={`~`}  symbol2={`%`}/>
-                  </IncrementTransitionWrapper>
-                  <h5>Enhanced Guest Feedbacks</h5>
-                  <p>
-                  Unlocking Customer Feedbacks & Insights for Better Growth 
-                  </p>
-                </div>
-              </div>
-            </div>
-            
-            </div>
-            
-            <h1 className="mb-5" style={{textAlign:'center'}}>
-
-            <div style={{display:'flex',flexDirection:'row',justifyContent:'center'}}>
-            <IncrementTransitionWrapper>
-                  <IncrementTansition n={TRUSTEDBY_COUNT} symbol1={`Trusted By  `} symbol2={` + Hotels all over India !`} large={true}/>
-              </IncrementTransitionWrapper> 
-            </div>
-              
-              
-              </h1>
-          </div>
-        </div>
-      </div>  */}
-
-    { /* Number and Statistics End*/}
-    
     {/* Testimonial Starts */}
 
       <div className="container-xxl py-5 wow fadeInUp" data-wow-delay="0.02s">
@@ -3192,13 +3074,11 @@ export default function Home() {
 
                 <div>
                   <a
-                    onClick={(e) => handleListProperty(e)}
+                    href={'/list-property'}
                     className="btn btn-sm px-3 border-end custom-demoButton mb-2"
                   >
                     List Your Property
                   </a>
-
-                  
                  
                  
                 </div>

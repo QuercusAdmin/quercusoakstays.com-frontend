@@ -765,10 +765,10 @@ return (
                 {/* TITLE + LOCALITY */}
                 <div>
                   <h2 style={{ margin: 0 }}>{properties?.title}</h2>
-                  <p style={{ color: "#756534", margin: 0 }}>{properties?.locality}</p>
+                  <p style={{ color: "#756534", margin: 0 }}><FaMapMarkerAlt/>&nbsp;{properties?.locality}</p>
                 </div>
 
-                <div className="gallery-type">{properties.propertyType}</div>
+                {/* <div className="gallery-type">{properties.propertyType}</div> */}
 
                 {/* SPACE DETAILS */}
                 <div className="row g-3">

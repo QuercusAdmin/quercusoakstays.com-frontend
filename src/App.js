@@ -117,7 +117,7 @@ export default function App() {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          style={{ marginTop: "2rem" }}
+          style={{ marginTop: "2rem", fontSize: "13px" }}
           />
 
 

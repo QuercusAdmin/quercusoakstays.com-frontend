@@ -254,6 +254,18 @@ export default function PropertyList() {
     }
   };
 
+  const toggleArrayItem = (field, value) => {
+    setPropertyData(prev => {
+      const exists = prev[field].includes(value);
+      return {
+        ...prev,
+        [field]: exists 
+          ? prev[field].filter(item => item !== value) 
+          : [...prev[field], value]
+      };
+    });
+  };
+
   useEffect(() => {
     const element = document.documentElement;
     element.style.scrollBehavior = 'smooth';
@@ -334,11 +346,18 @@ export default function PropertyList() {
       }
     }
 
-    if (propertyData?.images?.length === 0 || propertyData?.images?.length < 4) {
+    if (propertyData?.amenities?.length === 0) {
       formIsValid = false;
-      toast.error("Please Upload minimum 4 Property Images !!");
+      toast.error("Please Select Property Amenities !!");
       return;
     }
+
+    if (propertyData?.images?.length === 0 || propertyData?.images?.length < 4) {
+      formIsValid = false;
+      toast.error("Please Upload Minimum 4 Property Images !!");
+      return;
+    }
+
 
 
   
@@ -815,19 +834,19 @@ export default function PropertyList() {
             <h4 className="mb-4 text-primary" >Primary Information</h4>
             <div className="row g-3">
               <div className="col-md-6">
-                <label className="small fw-bold">Name *</label>
+                <label className="small fw-bold">Name</label>
                 <input type="text" className="form-control bg-light border-0 p-3" placeholder="Property Name" onChange={e => setPropertyData({...propertyData, title: e.target.value})} />
               </div>
               <div className="col-md-3">
-                <label className="small fw-bold">Property Type *</label>
+                <label className="small fw-bold">Property Type</label>
                 <select className="form-select bg-light border-0 p-3" onChange={e => setPropertyData({...propertyData, propertyType: e.target.value})}>
                   {[ "Villa", "Apartment", "Cottage", "Homestay", "Resort", "Hotel", "Boutique Property", "Guest House", "Farmhouse", "Bungalow", "Studio", "Hostel", "Chalet"].map(t => <option key={t} value={t}>{t}</option>)}
                 </select>
               </div>
-              {/* <div className="col-12">
+              <div className="col-12">
                 <label className="small fw-bold">Description</label>
                 <textarea className="form-control bg-light border-0 p-3" rows="3" onChange={e => setPropertyData({...propertyData, description: e.target.value})}></textarea>
-              </div> */}
+              </div>
             </div>
           </div>
 
@@ -835,19 +854,19 @@ export default function PropertyList() {
             <h4 className="mb-4 text-primary" >Space & Capacity</h4>
             <div className="row g-3">
               <div className="col-md-2 col-6">
-                <label className="small fw-bold">No Of Bedrooms *</label>
+                <label className="small fw-bold">No Of Bedrooms</label>
                 <input type="number" className="form-control bg-light border-0 p-3" onChange={e => handleNestedChange('spaceDetails', 'bedrooms', e.target.value)} />
               </div>
               <div className="col-md-2 col-6">
-                <label className="small fw-bold">No Of Bathrooms *</label>
+                <label className="small fw-bold">No Of Bathrooms</label>
                 <input type="number" className="form-control bg-light border-0 p-3" onChange={e => handleNestedChange('spaceDetails', 'bathrooms', e.target.value)} />
               </div>
               <div className="col-md-2 col-6">
-                <label className="small fw-bold">No Of Guests *</label>
+                <label className="small fw-bold">No Of Guests</label>
                 <input type="number" className="form-control bg-light border-0 p-3" onChange={e => handleNestedChange('spaceDetails', 'guests', e.target.value)} />
               </div>
               <div className="col-md-3 col-6">
-                <label className="small fw-bold">Kitchen *</label>
+                <label className="small fw-bold">Kitchen</label>
                 <select className="form-select bg-light border-0 p-3" onChange={e => handleNestedChange('spaceDetails', 'kitchen', e.target.value)}>
                   <option value="staff">Staff Managed</option>
                   <option value="self">Self Service</option>
@@ -856,7 +875,7 @@ export default function PropertyList() {
               <div className="col-md-3 d-flex align-items-center">
                 <div className="form-check form-switch mt-4">
                   <input className="form-check-input" type="checkbox" onChange={e => handleNestedChange('spaceDetails', 'driverAccommodation', e.target.checked)} />
-                  <label className="form-check-label small fw-bold">Driver Stay Available *</label>
+                  <label className="form-check-label small fw-bold">Driver Stay Available</label>
                 </div>
               </div>
             </div>
@@ -866,15 +885,15 @@ export default function PropertyList() {
             <h4 className="mb-4 text-primary">Location Details</h4>
             <div className="row g-3">
               <div className="col-md-6">
-                <label className="small fw-bold">Locality *</label>
+                <label className="small fw-bold">Locality</label>
                 <input type="text" className="form-control bg-light border-0 p-3" placeholder="e.g. Jharipani, Mussorie" onChange={e => setPropertyData({...propertyData, locality: e.target.value})} />
               </div>
               <div className="col-md-6">
-                <label className="small fw-bold">Google Maps Link *</label>
+                <label className="small fw-bold">Google Maps Link</label>
                 <input type="text" className="form-control bg-light border-0 p-3" placeholder="URL" onChange={e => setPropertyData({...propertyData, mapLocation: e.target.value})} />
               </div>
               <div className="col-12">
-                <label className="small fw-bold">Full Address *</label>
+                <label className="small fw-bold">Full Address</label>
                 <textarea className="form-control bg-light border-0 p-3" rows="3" onChange={e => setPropertyData({...propertyData, address: e.target.value})}></textarea>
               </div>
             </div>
@@ -884,15 +903,15 @@ export default function PropertyList() {
             <h4 className="mb-4 text-primary">Contact Details</h4>
             <div className="row g-3">
               <div className="col-md-4">
-                <label className="small fw-bold">Your Name *</label>
+                <label className="small fw-bold">Your Name</label>
                 <input type="text" className="form-control bg-light border-0 p-3"  onChange={e => setName(e.target.value)} />
               </div>
               <div className="col-md-4">
-                <label className="small fw-bold">Your Contact Number *</label>
+                <label className="small fw-bold">Your Contact Number</label>
                 <input type="number" className="form-control bg-light border-0 p-3"  onChange={e => setPhone(e.target.value)} />
               </div>
               <div className="col-md-4">
-                <label className="small fw-bold">Your Email Id *</label>
+                <label className="small fw-bold">Your Email Id</label>
                 <input type="email" className="form-control bg-light border-0 p-3" onChange={e => setEmail(e.target.value)} />
               </div>
 
@@ -900,7 +919,23 @@ export default function PropertyList() {
           </div>
 
           <div className="bg-white p-4 rounded-4 shadow-sm mb-4 border-0">
-            <h4 className="mb-4 text-primary" >Gallery *</h4>
+            <h4 className="mb-4 text-primary">Property Amenities</h4>
+            <div className="d-flex flex-wrap gap-2">
+              {["High-Speed WiFi","Smart TV", "Gourmet Kitchen",  "Garden",  "Terrace",  "Patio", "Balcony",  "Laundry", "Private Pool", "Secure Parking", "Fireplace", "BBQ Area","Central AC", "Gym", "Cafe"]
+              .map(amenity => (
+                <button 
+                  key={amenity}
+                  onClick={() => toggleArrayItem('amenities', amenity)}
+                  className={`btn btn-sm rounded-pill px-3 py-2 ${propertyData.amenities.includes(amenity) ? 'btn-primary' : 'btn-outline-primary'}`}
+                >
+                  {amenity}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-white p-4 rounded-4 shadow-sm mb-4 border-0">
+            <h4 className="mb-4 text-primary" >Gallery</h4>
             <div className="row g-3">
               {propertyData.images.map((img, i) => (
                 <div className="col-md-2 col-4 position-relative" key={img.public_id || i}>

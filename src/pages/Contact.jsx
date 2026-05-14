@@ -4,7 +4,7 @@ import Footer from '../components/Footer.jsx'
 import { toast } from "react-toastify";
 import axiosInstance from "../axiosInstance.js"
 import { useNavigate, useLocation } from 'react-router-dom';
-import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE,  SUCCESS, COMPANY_ADDRESS} from '../config/configuration.js'
+import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE,  SUCCESS, COMPANY_ADDRESS, RESRVATION_ADDRESS, RESRVATION_PHONE} from '../config/configuration.js'
 
 
 function Contact() {
@@ -128,8 +128,20 @@ function Contact() {
                     <i className="fa fa-map-marker-alt text-white" />
                   </div>
                   <div className="ms-3">
-                    <h5 className="text-primary">Office</h5>
+                    <h5 className="text-primary">Head Office</h5>
                     <p className="mb-0 text-dark">{COMPANY_ADDRESS}</p>
+                  </div>
+                </div>
+                <div className="d-flex align-items-center mb-4">
+                  <div
+                    className="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                    style={{ width: 50, height: 50 }}
+                  >
+                    <i className="fa fa-map-marker-alt text-white" />
+                  </div>
+                  <div className="ms-3">
+                    <h5 className="text-primary">Reservation Office</h5>
+                    <p className="mb-0 text-dark">{RESRVATION_ADDRESS}</p>
                   </div>
                 </div>
                 <div className="d-flex align-items-center mb-4">
@@ -140,12 +152,30 @@ function Contact() {
                     <i className="fa fa-phone text-white" />
                   </div>
                   <div className="ms-3">
-                    <h5 className="text-primary">Mobile</h5>
+                    <h5 className="text-primary"> Head Office Number</h5>
                       <a 
                         href={`tel:+${COMPANY_PHONE}`} 
                         className="mb-0 text-dark text-decoration-none"
                       >
                         +{COMPANY_PHONE?.substring(0,2)} {COMPANY_PHONE?.substring(2)}
+                      </a>
+                  </div>
+                </div>
+
+                <div className="d-flex align-items-center mb-4">
+                  <div
+                    className="d-flex align-items-center justify-content-center flex-shrink-0 bg-primary"
+                    style={{ width: 50, height: 50 }}
+                  >
+                    <i className="fa fa-phone text-white" />
+                  </div>
+                  <div className="ms-3">
+                    <h5 className="text-primary"> Reservations Number</h5>
+                      <a 
+                        href={`tel:+${RESRVATION_PHONE}`} 
+                        className="mb-0 text-dark text-decoration-none"
+                      >
+                        +{RESRVATION_PHONE?.substring(0,2)} {RESRVATION_PHONE?.substring(2)}
                       </a>
                   </div>
                 </div>

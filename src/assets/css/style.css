@@ -2553,7 +2553,12 @@ body {
   padding-top : px 0px 5px 0px !important;
 }
 
-
+.custom-label4{
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color : #000000 !important;
+  text-align: right;
+}
 
 .btn-new2{
 
@@ -2593,13 +2598,25 @@ body {
   right: 2%;
 }
 
-
+.Icon2{
+  position: absolute;
+  right: 8%;
+  transform: translateY(9px)
+}
 
 .uni-search-wrapper {
     margin-bottom: 20px;
 }
 
+.logout-btn {
+    color: var(--primary); 
+    border-color: var(--primary);
+}
 
+.logout-btn:hover {
+    background-color: var(--primary) !important;
+    color: #ffffff !important;
+}
 
 .uni-search-container {
     max-width: 1300px;

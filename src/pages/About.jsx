@@ -13,26 +13,28 @@ function About() {
     window.scrollTo(0, 0);
   }, []);
 
-  const stats = {
-    performance :  [
-      { value: 75, suffix: "%", label: "Occupancy Rate Across All Properties", icon: <FiHome className="text-primary" /> },
-      { value: 25, suffix: "%", label: "Revenue Growth Year on Year Increase",  icon: <FiTrendingUp className="text-success" /> },
-      { value: 9, suffix: "+", label: "Properties all Over India",  icon: <FiArrowUpRight className="text-info" /> },
-      { value: 95, suffix: "%", label: "Guest Satisfaction and Loyalty",  icon: <FiSmile className="text-warning" /> }
-    ],
-    customerInsights : {
-      newCustomers: {
-          acquisitionRate : {  value: 15, prefix : "", suffix: "%" },
-          conversionRate : {  value: 68,  prefix : "", suffix: "%" },
-          avgBookingValue : {  value: 8500, prefix : "₹ ", suffix: "" },
+
+  const stats =   {
+    "performance": {
+      "occupancyRate": { "value": 75, "suffix": "%", "prefix": "", "label": "Occupancy Rate Across All Properties" },
+      "revenueGrowthYOY": { "value": 25, "suffix": "%", "prefix": "", "label": "Revenue Growth Year on Year Increase" },
+      "noOfProperties": { "value": 9, "suffix": "+", "prefix": "", "label": "Properties All Over India" },
+      "guestSatisfaction": { "value": 95, "suffix": "%", "prefix": "", "label": "Guest Satisfaction and Loyalty" }
+    },
+    "customerInsights": {
+      "newCustomers": {
+        "acquisitionRate": { "value": 15, "prefix": "", "suffix": "%" },
+        "conversionRate": { "value": 68, "prefix": "", "suffix": "%" },
+        "avgBookingValue": { "value": 8500, "prefix": "₹ ", "suffix": "" }
       },
-      returningCustomers: {
-          retentionRate : {  value: 82, prefix : "", suffix: "%" },
-          repeatBooking : {  value: 56,  prefix : "", suffix: "%" },
-          lifetimeValue : {  value: 25000, prefix : "₹ ", suffix: "" },
+      "returningCustomers": {
+        "retentionRate": { "value": 82, "prefix": "", "suffix": "%" },
+        "repeatBooking": { "value": 56, "prefix": "", "suffix": "%" },
+        "lifetimeValue": { "value": 25000, "prefix": "₹ ", "suffix": "" }
       }
     }
-  };
+  }
+  
 
   const partners = [
     {
@@ -184,15 +186,34 @@ function About() {
               </div>
 
               <div className="row g-4 wow fadeInUp "  data-wow-delay="0.3s">
-                {stats?.performance.map((stat, i) => (
-                  <div className="col-lg-3 col-6 text-center" key={i}>
 
-                    <IncrementTransitionWrapper >
-                      <IncrementTansition n={stat.value} symbol1={``}  symbol2={stat.suffix}/>
-                      </IncrementTransitionWrapper>
-                    <p className="text-muted mb-0 fw-medium">{stat.label}</p>
-                  </div>
-                ))}
+                <div className="col-lg-3 col-6 text-center" key={"occupancyRate"}>
+                  <IncrementTransitionWrapper >
+                    <IncrementTansition n={stats?.performance?.occupancyRate?.value ?? 0} symbol1={``}  symbol2={stats?.performance?.occupancyRate?.suffix ?? ""}/>
+                    </IncrementTransitionWrapper>
+                  <p className="text-muted mb-0 fw-medium">{stats?.performance?.occupancyRate?.label ?? ""}</p>
+                </div>
+
+                <div className="col-lg-3 col-6 text-center" key={"revenueGrowthYOY"}>
+                  <IncrementTransitionWrapper >
+                    <IncrementTansition n={stats?.performance?.revenueGrowthYOY?.value ?? 0} symbol1={``}  symbol2={stats?.performance?.revenueGrowthYOY?.suffix ?? ""}/>
+                    </IncrementTransitionWrapper>
+                  <p className="text-muted mb-0 fw-medium">{stats?.performance?.revenueGrowthYOY?.label ?? ""}</p>
+                </div>
+
+                <div className="col-lg-3 col-6 text-center" key={"noOfProperties"}>
+                  <IncrementTransitionWrapper >
+                    <IncrementTansition n={stats?.performance?.noOfProperties?.value ?? 0} symbol1={``}  symbol2={stats?.performance?.noOfProperties?.suffix ?? ""}/>
+                    </IncrementTransitionWrapper>
+                  <p className="text-muted mb-0 fw-medium">{stats?.performance?.noOfProperties?.label ?? ""}</p>
+                </div>
+
+                <div className="col-lg-3 col-6 text-center" key={"guestSatisfaction"}>
+                  <IncrementTransitionWrapper >
+                    <IncrementTansition n={stats?.performance?.guestSatisfaction?.value ?? 0} symbol1={``}  symbol2={stats?.performance?.guestSatisfaction?.suffix ?? ""}/>
+                    </IncrementTransitionWrapper>
+                  <p className="text-muted mb-0 fw-medium">{stats?.performance?.guestSatisfaction?.label ?? ""}</p>
+                </div>
               </div>
               <br />
 

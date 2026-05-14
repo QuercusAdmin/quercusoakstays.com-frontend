@@ -2114,7 +2114,7 @@ function FilterPanel({ filters, setFilters, priceRange, setPriceRange, onClose, 
               <h6 className="section-title bg-white text-center text-primary px-3">
                 Properties
               </h6>
-              <h1 className="mb-5">Our Featured Properties</h1>
+              <h1 className="mb-5">Our Curated Properties</h1>
             </div>
 
             <div className="uni-search-wrapper  wow fadeInUp" data-wow-delay="0.1s">

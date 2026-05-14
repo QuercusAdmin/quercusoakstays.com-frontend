@@ -5,6 +5,7 @@ import axiosInstance from "../axiosInstance.js"
 import { baseUrl,COMPANY_EMAIL,COMPANY_PHONE, EMAIL_REGEX, NEWS_LETTER, SUCCESS,  COMPANY_FACEBOOK_HANDLE_URL, COMPANY_LINKEDIN_HANDLE_URL, COMPANY_INSTAGRAM_HANDLE_URL, COMPANY_YOUTUBE_HANDLE_URL, COMPANY_X_HANDLE_URL, COMPANY_DISCORD_HANDLE_URL, COMPANY_ADDRESS, COMPANY_INFO} from '../config/configuration.js'
 
 import { useNavigate } from 'react-router-dom';
+import axios from "axios";
 
 export default function Footer() {
 
@@ -29,20 +30,19 @@ export default function Footer() {
 
         let data={
           email:email,
-          type:NEWS_LETTER
         }
 
-        // try {
-        //   const response = await axiosInstance.post(`${baseUrl}/notify/newsletter`, data,{
-        //       headers: {"Content-Type":"application/json"}})
-        //   if (response.status === SUCCESS) {
+        try {
+          const response = await axios.post(`${baseUrl}newsletter/subscribe`, data,{
+              headers: {"Content-Type":"application/json"}})
+          if (response.status === SUCCESS) {
             toast.success("Thanks for showing Interest. You have successfully Subscribed to our Newsletter !!");
             navigate("/")
-        //   } 
-        // } catch (err) {
-        //   console.log("Error",err)
-        //   toast.error("Something went wrong !!");
-        // }
+          } 
+        } catch (err) {
+          console.log("Error",err)
+          toast.error("Unable to Subscribe to our NewsLetter. Please Try Again Later !!");
+        }
   
       }
       else{

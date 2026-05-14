@@ -16,12 +16,9 @@ import { ToastContainer, toast, Slide } from "react-toastify";
 import PropertyView from './pages/PropertyView.jsx';
 import Login from './pages/Login.jsx';
 import { useNavigate } from 'react-router-dom';
-// import Dashboard from './component/dashboard';
-// import Forgot from './component/forget';
-// import Otp from './component/otp';
-// import ChangePassword from './component/change-password';
-// import LoginSuccess from './component/login-success';
-// import GraphicalAnalysis from './component/graphical-analysis';
+import DashboardAdminPanel from './pages/DashboardAdminPanel.jsx';
+import ForgotPassword from './pages/Forget.jsx';
+import ChangePassword from './pages/ChangePassword.jsx';
 
 import { debugLog, isLoggedIn } from './utils';
 import PropertyList from './pages/PropertyList.jsx';
@@ -76,7 +73,7 @@ export default function App() {
     children,
   }) => {
     
-    const hotelData = JSON.parse(localStorage.getItem("hotel"));
+    const adminData = JSON.parse(localStorage.getItem("admin"));
 
     
     if (!isLoggedIn(adminType)) {
@@ -84,13 +81,13 @@ export default function App() {
     }
     else{
 
-      let roleManager = hotelData?.role
+      let roleManager = adminData?.userType
 
       if(role.includes(roleManager)){
         return children ? children : <Outlet />;
       }
       else{
-        return <Navigate to={`/dashboard`} replace />;
+        return <Navigate to={`/admin-dashboard`} replace />;
       }
 
 
@@ -99,7 +96,6 @@ export default function App() {
 
   
   };
-
 
 
 
@@ -141,42 +137,46 @@ export default function App() {
               <Route path='/team' element={<Team/>}/>
               <Route path="*" element={<Navigate to="/" />} />
               <Route path='/login' element={<Login/>}/>
-              {/* <Route  path="/dashboard" element={<ProtectedRoute adminType={'hotel'} role={['admin' , 'spa', 'security','frontdesk', 'housekeeping', 'foodandbeverage' ]}><Dashboard/> </ProtectedRoute>} /> */}
-              {/* <Route path='/forget' element={<Forgot />}/> */}
-              {/* <Route path='/otp' element={<Otp />}/> */}
-              {/* <Route path='/change-password' element={<ChangePassword />}/> */}
-              {/* <Route path='/login-success' element={<LoginSuccess />}/> */}
-              {/* <Route path='/graphical-analysis' element={<ProtectedRoute adminType={'hotel'} role={['admin' , 'spa', 'security','frontdesk', 'housekeeping', 'foodandbeverage' ]}><GraphicalAnalysis/> </ProtectedRoute>}/> */}
+              <Route  path="/admin-dashboard" element={<ProtectedRoute adminType={'admin'} role={['admin' ]}><DashboardAdminPanel/> </ProtectedRoute>} />
+              <Route path='/change-password' element={<ChangePassword />}/>
+              <Route path='/forget-password' element={<ForgotPassword />}/>
+
             </Routes>
 
+            {
+              window.location.pathname!=="/admin-dashboard" &&
+            
+                <div className="action-buttons-container">
+                  <a 
+                    href={`https://wa.me/${WHATSAPP_CHAT_NUMBER}?text=${encodeURIComponent(WHATSAPP_CHAT_MESSAGE)}`} 
+                    className="whatsapp-button" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <i className="bi bi-whatsapp"></i>
+                  </a>
 
-          <div className="action-buttons-container">
-            <a 
-              href={`https://wa.me/${WHATSAPP_CHAT_NUMBER}?text=${encodeURIComponent(WHATSAPP_CHAT_MESSAGE)}`} 
-              className="whatsapp-button" 
-              target="_blank" 
-              rel="noopener noreferrer"
-            >
-              <i className="bi bi-whatsapp"></i>
-            </a>
+                  { ShowTopBtn &&
+                    <a 
+                      href="#" 
+                      onClick={(e) => { e.preventDefault();
+                      
+                          navigate(window.location.pathname, { replace: true });
+                          window.scrollTo({ top: 0, behavior: 'smooth' });
+                      }}
+                      className={`btn btn-lg btn-primary back-to-top-button fs-6`}
+                    >
+                      <i className="bi bi-chevron-up me-2"></i> 
+                      <span className="button-text">Back to Top</span>
+                    </a>
+              
+                  }
 
-            { ShowTopBtn &&
-              <a 
-                href="#" 
-                onClick={(e) => { e.preventDefault();
-                 
-                    navigate(window.location.pathname, { replace: true });
-                    window.scrollTo({ top: 0, behavior: 'smooth' });
-                 }}
-                className={`btn btn-lg btn-primary back-to-top-button fs-6`}
-              >
-                <i className="bi bi-chevron-up me-2"></i> 
-                <span className="button-text">Back to Top</span>
-              </a>
-        
+                </div>
+            
             }
 
-          </div>
+
       </div>
   )
 }
